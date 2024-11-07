@@ -2,8 +2,6 @@
 
 > A comprehensive project to master advanced CSS concepts and modern styling techniques.
 
-![CSS Banner](https://i.imgur.com/5bXh2yx.png)
-
 ## 🎯 Project Overview
 
 This project explores advanced CSS concepts through a series of progressive tasks, from basic styling to complex animations. We'll build a modern, responsive website while learning essential CSS techniques.
