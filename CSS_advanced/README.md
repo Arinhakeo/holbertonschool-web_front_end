@@ -8,52 +8,105 @@ This project explores advanced CSS concepts through a series of progressive task
 
 ## 🗂️ Project Structure
 
-<div class="mermaid">
-graph TB
-    A[Project Root] --> B[images/]
-    A --> C[styles/]
-    B --> D[Profile Pictures]
-    B --> E[Article Images]
-    B --> F[Work Examples]
-    C --> G[Base Styles]
-    C --> H[Components]
-    C --> I[Themes]
-    
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#bbf,stroke:#333,stroke-width:2px
-</div>
+```
+holbertonschool-web_front_end/
+└── CSS_advanced/
+    ├── images/
+    │   ├── pic-about-01.jpg
+    │   ├── pic-article-01.jpg
+    │   ├── pic-article-02.jpg
+    │   ├── pic-article-03.jpg
+    │   ├── pic-person-01.jpg
+    │   ├── pic-person-02.jpg
+    │   ├── pic-person-03.jpg
+    │   ├── pic-work-01.jpg
+    │   ├── pic-work-02.jpg
+    │   └── pic-work-03.jpg
+    └── styles/
+        ├── 1-style.css  # Basic scroll behavior
+        ├── 2-style.css  # Color values
+        └── ... up to 32-style.css
+```
 
-## 📚 Concepts Covered
+## 📚 Tasks Breakdown
 
-### 1. CSS Variables & Custom Properties
+### Foundation Tasks (1-5)
+- Custom scroll behavior implementation
+- Color variables setup
+- Font families configuration
+- Base size settings
+- Weight variations
+
+### Styling Tasks (6-10)
+- Google Fonts integration
+- Line heights configuration
+- Links decoration
+- Section alignments
+- Header styling
+
+### Component Tasks (11-15)
+- Tagline styling
+- Headings configuration
+- Pseudo-classes implementation
+- Normalize CSS integration
+- Universal box-sizing
+
+### Layout Tasks (16-20)
+- Container setup
+- Section padding
+- Navigation styling
+- Grid system
+- Float clearing
+
+### Advanced Tasks (21-25)
+- Simplified selectors
+- Dark theme
+- SVG icons
+- Background effects
+- Button styling
+
+### Polish Tasks (26-32)
+- Border radius implementation
+- Hero section
+- Header fixes
+- Navigation effects
+- Work grid
+- Testimonials
+- Transitions and animations
+
+## 🌟 Key Features
+
+### Custom Properties System
 ```css
 :root {
     --color-primary: #d73953;
-    --text-color: var(--color-black);
-    --font-family-title: "Raleway", "Helvetica Neue";
+    --text-color: #161616;
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 ```
 
-### 2. Advanced Selectors
-- Attribute selectors `[class^="col-"]`
-- Pseudo-elements `::before` and `::after`
-- Complex combinations
+### Grid System
+```css
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-### 3. Responsive Design
-<div class="mermaid">
-pie
-    title "Project Focus Areas"
-    "Layout & Grid" : 30
-    "Typography" : 25
-    "Animations" : 20
-    "Colors & Themes" : 15
-    "Components" : 10
-</div>
+[class^="col-"] {
+    padding: 0.5rem;
+}
 
-## 🛠️ Key Features
+.col-1-3 {
+    width: 33.33%;
+}
 
-### Theme System
+.col-1-2 {
+    width: 50%;
+}
+```
+
+### Theme Implementation
 ```css
 [data-section-theme="dark"] {
     --text-color: var(--color-white);
@@ -62,121 +115,82 @@ pie
 }
 ```
 
-### Grid System
-```css
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+## 🎓 Learning Objectives
 
-[class^="col-"] {
-    float: left;
-    padding: 0.5rem;
-}
-```
+1. **CSS Custom Properties**
+   - Global theming
+   - Variable scoping
+   - Dynamic value updates
 
-### Animation System
-```css
-:root {
-    --transition-duration: .3s;
-    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
-}
-```
+2. **Responsive Design**
+   - Grid systems
+   - Flexible layouts
+   - Mobile-first approach
 
-## 📝 Task Breakdown
-
-<div class="mermaid">
-gantt
-    title Project Tasks Timeline
-    dateFormat  YYYY-MM-DD
-    section Foundation
-    Variables & Setup           :a1, 2024-01-01, 7d
-    Grid System                 :a2, after a1, 5d
-    section Components
-    Navigation                  :b1, after a2, 6d
-    Cards & Sections           :b2, after b1, 8d
-    section Polish
-    Animations                 :c1, after b2, 4d
-    Theme Integration          :c2, after c1, 5d
-</div>
-
-## 🌟 Highlights
-
-1. **Custom Properties**
-   - Global theming system
-   - Reusable values
-   - Easy maintenance
-
-2. **Modern Layouts**
-   - Flexible grid system
-   - Responsive components
-   - Clean structure
-
-3. **Animations & Transitions**
-   - Smooth hover effects
-   - State transitions
-   - Professional polish
-
-## 💡 Best Practices Learned
-
-- Use of CSS custom properties for maintainability
-- BEM-like naming conventions
-- Responsive design patterns
-- Performance considerations
-- Animation best practices
+3. **Animation & Transitions**
+   - Smooth state changes
+   - Interactive elements
+   - Performance optimization
 
 ## 🚀 Getting Started
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/holbertonschool-web_front_end.git
+git clone https://github.com/[your-username]/holbertonschool-web_front_end.git
+```
+
+2. Navigate to the project:
+```bash
 cd holbertonschool-web_front_end/CSS_advanced
 ```
 
-2. Explore the styles:
-   - Start with `styles/1-style.css`
-   - Progress through numbered files
-   - Each file builds on the previous one
+3. Follow the tasks progression through the numbered CSS files.
 
-## 📈 Learning Progress
+## 📈 Skills Developed
 
-<div class="mermaid">
-xychart-beta
-    title "Learning Curve"
-    x-axis [Day 1, Day 5, Day 10, Day 15, Day 20]
-    y-axis "Skill Level" 0 --> 100
-    line ["10", "30", "55", "75", "95"]
-</div>
+- Advanced CSS selector usage
+- Custom properties management
+- Responsive design techniques
+- Animation implementation
+- Modern CSS best practices
+- Cross-browser compatibility
+- Performance optimization
+- Code organization
 
-## 🎓 Key Takeaways
+## 🌈 Color Scheme Reference
 
-1. **Modular CSS**
-   - Breaking down styles into manageable chunks
+| Variable Name | Hex Code | Usage |
+|--------------|----------|--------|
+| Primary | `#d73953` | Main accent color |
+| Black | `#090909` | Text & dark elements |
+| White | `#ffffff` | Light elements |
+| Light Grey | `#f3f3f3` | Backgrounds |
+| Dark Grey | `#353535` | Secondary elements |
+
+## 💡 Best Practices Learned
+
+1. **Organization**
+   - Modular CSS structure
+   - Consistent naming conventions
+   - Logical file organization
+
+2. **Maintainability**
+   - Use of CSS variables
    - Reusable components
-   - Maintainable structure
+   - Clear documentation
 
-2. **Advanced Techniques**
-   - Custom properties
-   - Complex selectors
-   - Modern animations
-
-3. **Professional Workflow**
-   - Organized structure
-   - Clear naming conventions
-   - Progressive enhancement
-
-## 🌈 Color Scheme
-
-| Variable | Color | Usage |
-|----------|--------|-------|
-| `--color-primary` | ![#d73953](https://via.placeholder.com/15/d73953/000000?text=+) `#d73953` | Primary elements |
-| `--color-black` | ![#090909](https://via.placeholder.com/15/090909/000000?text=+) `#090909` | Text & dark elements |
-| `--color-white` | ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+) `#ffffff` | Light elements |
+3. **Performance**
+   - Optimized selectors
+   - Efficient animations
+   - Browser compatibility
 
 ## 🤝 Contributing
 
-Feel free to submit issues and enhancement requests!
+Feel free to:
+- Submit issues
+- Propose improvements
+- Share feedback
+- Ask questions
 
 ## 📜 License
 
@@ -184,4 +198,4 @@ This project is part of the Holberton School curriculum.
 
 ---
 
-<p align="center">Made with ❤️ and a lot of CSS</p>
+<p align="center">Made with ❤️ and CSS magic ✨</p>
