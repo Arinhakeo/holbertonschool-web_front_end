@@ -1,0 +1,42 @@
+:root {
+    /* Ces variables sont comme des boîtes où on range nos couleurs */
+    --color-primary: #d73953;    /* Rose/Rouge */
+    --color-black: #090909;      /* Noir */
+    --color-white: #ffffff;      /* Blanc */
+    --color-light-grey: #f3f3f3; /* Gris clair */
+    --color-dark-grey: #353535;  /* Gris foncé */
+    --text-color: var(--color-black); /* Utilise la couleur noire définie au-dessus */
+
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #161616;
+}
+
+a {
+    color: #161616;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.card-category {
+    color: #D73953;
+}
+
+.section-tagline {
+    color: #D73953;
+}
